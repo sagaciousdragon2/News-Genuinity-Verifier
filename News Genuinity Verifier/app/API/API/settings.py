@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'core',
     'core.usercheckbytitle',
     'core.livenews',
-    'core.newsquiz'
 ]
 
 MIDDLEWARE = [
