@@ -25,7 +25,7 @@ SECRET_KEY = 'jthazs&17j9&u#@d#b@!&v+%8im13^99$&+udvc!-3ov=!f&)^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', 'genuinityverifier.test']
+ALLOWED_HOSTS = ['*', 'genuinenessverifier.test']
 
 
 # Application definition

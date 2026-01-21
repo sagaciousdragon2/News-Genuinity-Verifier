@@ -6,7 +6,7 @@ import { Check2, X } from 'react-bootstrap-icons';
 import Axios from 'axios';
 
 function Home() {
-  document.title = 'Genuinity Verifier | Home';
+  document.title = 'Genuineness Verifier | Home';
   let stage = 1;
 
   const [liveNewsData, setLiveNewsData] = useState([]);
@@ -17,7 +17,7 @@ function Home() {
 
   // Function to fetch live news data
   const fetchLiveNewsData = () => {
-    Axios.get('http://genuinityverifier.test:8000/api/live/')
+    Axios.get('http://genuinenessverifier.test:8000/api/live/')
       .then((response) => {
         setLiveNewsData(response.data);
         console.log(response.data);
@@ -26,7 +26,7 @@ function Home() {
         console.error('Error', error);
       });
 
-    Axios.get('http://genuinityverifier.test:8000/api/category/News/')
+    Axios.get('http://genuinenessverifier.test:8000/api/category/News/')
       .then((response) => {
         setMustSeeNews(response.data);
         console.log(response.data);
@@ -36,7 +36,7 @@ function Home() {
       });
 
     const fetchPromises = categories.map((category) => {
-      return Axios.get(`http://genuinityverifier.test:8000/api/category/${category}/`)
+      return Axios.get(`http://genuinenessverifier.test:8000/api/category/${category}/`)
         .then((response) => {
           if (response.data.length > 0) {
             return response.data[0]; // Return the news data

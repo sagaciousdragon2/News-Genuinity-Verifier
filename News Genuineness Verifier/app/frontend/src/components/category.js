@@ -21,7 +21,7 @@ const CategoryContainer = () => {
 
     const capitalizedCategory = category.charAt(0).toUpperCase() + category.slice(1);
 
-    Axios.get('http://genuinityverifier.test:8000/api/category/' + capitalizedCategory + '/')
+    Axios.get('http://genuinenessverifier.test:8000/api/category/' + capitalizedCategory + '/')
       .then((response) => {
 
         console.log('API response:', response);
@@ -47,7 +47,7 @@ const CategoryContainer = () => {
 
   useEffect(() => {
     console.log('Category:', category);
-    document.title = `Genuinity Verifier | ${category.charAt(0).toUpperCase() + category.slice(1)}`;
+    document.title = `Genuineness Verifier | ${category.charAt(0).toUpperCase() + category.slice(1)}`;
     fetchNewsData();
 
   }, [category]);

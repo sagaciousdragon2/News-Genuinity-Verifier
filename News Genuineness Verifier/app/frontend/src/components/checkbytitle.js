@@ -9,7 +9,7 @@ import { Check2, X } from 'react-bootstrap-icons';
 
 
 function CheckByTitle() {
-  document.title = 'Genuinity Verifier | Search and Verify';
+  document.title = 'Genuineness Verifier | Search and Verify';
   let stage = 2;
   const [inputNewsTitle, setNewsTitle] = useState('');
   const [predictedValue, setPredictedValue] = useState('');
@@ -23,7 +23,7 @@ function CheckByTitle() {
       user_news: inputNewsTitle,
     };
 
-    Axios.post('http://genuinityverifier.test:8000/api/usercheck/title/', dataToSend)
+    Axios.post('http://genuinenessverifier.test:8000/api/usercheck/title/', dataToSend)
       .then((response) => {
         if (response.data.status === 'irrelevant') {
           setPredictedValue('Irrelevant');

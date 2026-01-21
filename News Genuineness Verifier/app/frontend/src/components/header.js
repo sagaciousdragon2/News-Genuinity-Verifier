@@ -20,7 +20,7 @@ function Header(props) {
                                 <Navbar.Brand href="/" className="m-0 p-0 text-center">
                                     <div className="brand-wrapper d-flex flex-column align-items-center gap-2">
                                         <img src={process.env.PUBLIC_URL + '/logo.png'} height={60} className='logo-image-premium' alt="Logo"></img>
-                                        <span className="brand-text-premium fs-4">Genuinity <span className="brand-accent-premium">Verifier</span></span>
+                                        <span className="brand-text-premium fs-4">Genuineness <span className="brand-accent-premium">Verifier</span></span>
                                     </div>
                                 </Navbar.Brand>
                             </LinkContainer>
